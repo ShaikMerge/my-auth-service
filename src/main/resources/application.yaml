@@ -21,12 +21,12 @@ spring:
       client:
         registration:
           google:
-            client-id:
-            client-secret:
+            client-id: {clientId}
+            client-secret: {clientId}
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
           github:
-            client-id:
-            client-secret:
+            client-id: {clientId}
+            client-secret: {clientId}
 
 
 
