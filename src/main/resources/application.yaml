@@ -21,8 +21,8 @@ spring:
       client:
         registration:
           google:
-            client-id: 288530793958-erdgf2ci9teb579gq2c74sr0epf9llu7.apps.googleusercontent.com
-            client-secret: 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
+            client-id:
+            client-secret:
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
           github:
             client-id: shaik
