@@ -25,8 +25,8 @@ spring:
             client-secret:
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
           github:
-            client-id: shaik
-            client-secret: shaik
+            client-id:
+            client-secret:
 
 
 
