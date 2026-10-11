@@ -1,0 +1,32 @@
+server:
+  port: 9003
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql
+  application:
+    name: my-application
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 288530793958-erdgf2ci9teb579gq2c74sr0epf9llu7.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+          github:
+            client-id: shaik
+            client-secret: shaik
+
+
+
