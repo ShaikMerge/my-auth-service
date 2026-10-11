@@ -15,6 +15,7 @@ public class AuthService {
         return switch (regestrationId.toLowerCase()) {
             case "google" -> AuthProviderType.GOOGLE;
             case "github" -> AuthProviderType.GITHUB;
+            case "keycloak" -> AuthProviderType.KEYCLOAK;
             default -> throw new IllegalArgumentException("Unsupported registrationId: " + regestrationId);
         };
 

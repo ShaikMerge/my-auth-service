@@ -37,6 +37,18 @@ public class AuthUtil {
                 yield String.valueOf(id);
             }
 
+            case "keycloak" -> {
+                String sub = oauth2User.getAttribute("sub");
+
+                if (sub == null || sub.isBlank()) {
+                    throw new IllegalStateException(
+                            "Keycloak user ID (sub) is missing"
+                    );
+                }
+
+                yield sub;
+            }
+
             default -> throw new IllegalArgumentException(
                     "Unsupported registrationId: " + registrationId
             );

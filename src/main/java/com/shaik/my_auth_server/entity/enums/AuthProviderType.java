@@ -4,6 +4,7 @@ public enum AuthProviderType {
 
     GOOGLE,
     GITHUB,
+    KEYCLOAK,
     FACEBOOK,
     TWITTER,
     LINKEDIN,
